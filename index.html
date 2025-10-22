@@ -207,6 +207,38 @@
         border-left-color: var(--sidebar-link-hover-color);
       }
 
+      /* Center links for smaller screens */
+      @media (max-width: 1024px) {
+        .sidebar nav {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .sidebar nav a {
+          display: inline-block;
+          text-align: left;
+          padding-left: 0;
+          border-left: none;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+
+        .sidebar nav a:hover {
+          padding-left: 0;
+          border-left-color: transparent;
+        }
+
+        .sidebar-contact {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 25px !important;
+        }
+        .sidebar-contact a {
+          flex-wrap: wrap;
+        }
+      }
+
       .sidebar-contact {
         margin-top: 50px;
       }

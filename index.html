@@ -24,6 +24,7 @@
     <meta name="author" content="Yusuf Seyrek" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://seyrek.dev" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -226,11 +227,18 @@
         word-break: break-all;
         transition: all 0.2s;
         border-bottom: 1px solid transparent;
+        display: flex;
+        align-items: center;
       }
 
       .sidebar-contact a:hover {
         color: var(--sidebar-contact-link-hover-color);
         border-bottom-color: var(--sidebar-contact-link-hover-color);
+      }
+
+      .contact-icon {
+        margin-right: 10px;
+        font-size: 1.1rem;
       }
 
       .profile-picture {
@@ -492,13 +500,14 @@
         </nav>
 
         <div class="sidebar-contact">
-          <h3>Contact</h3>
-          <a href="mailto:seyrek91@gmail.com">seyrek91@gmail.com</a>
+          <a href="mailto:seyrek91@gmail.com"
+            ><span class="contact-icon">✉️</span> seyrek91@gmail.com</a
+          >
           <a href="https://github.com/yusufseyrek" target="_blank"
-            >github.com/yusufseyrek</a
+            ><span class="contact-icon">💻</span> github.com/yusufseyrek</a
           >
           <a href="https://www.linkedin.com/in/yusufseyrek/" target="_blank"
-            >linkedin.com/in/yusufseyrek</a
+            ><span class="contact-icon">💼</span> linkedin.com/in/yusufseyrek</a
           >
         </div>
       </aside>

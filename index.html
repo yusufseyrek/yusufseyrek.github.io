@@ -91,6 +91,54 @@
       }
     </script>
     <style>
+      :root {
+        --background-color: #fff;
+        --text-color: #333;
+        --sidebar-bg: #fafafa;
+        --sidebar-border: #e0e0e0;
+        --sidebar-title-color: #000;
+        --sidebar-link-color: #666;
+        --sidebar-link-hover-color: #000;
+        --sidebar-contact-title-color: #000;
+        --sidebar-contact-link-color: #666;
+        --sidebar-contact-link-hover-color: #000;
+        --section-title-color: #000;
+        --about-text-color: #333;
+        --skill-category-title-color: #000;
+        --skill-item-color: #666;
+        --work-title-color: #000;
+        --work-role-color: #666;
+        --work-date-color: #999;
+        --work-description-color: #666;
+        --footer-color: #999;
+        --border-color: #e0e0e0;
+        --profile-border-color: #e0e0e0;
+      }
+
+      [data-theme="dark"] {
+        --background-color: #1a1a1a;
+        --text-color: #f0f0f0;
+        --sidebar-bg: #2d2d2d;
+        --sidebar-border: #404040;
+        --sidebar-title-color: #ffffff;
+        --sidebar-link-color: #ccc;
+        --sidebar-link-hover-color: #ffffff;
+        --sidebar-contact-title-color: #ffffff;
+        --sidebar-contact-link-color: #ccc;
+        --sidebar-contact-link-hover-color: #ffffff;
+        --section-title-color: #ffffff;
+        --about-text-color: #f0f0f0;
+        --skill-category-title-color: #ffffff;
+        --skill-item-color: #ccc;
+        --work-title-color: #ffffff;
+        --work-role-color: #ccc;
+        --work-date-color: #777;
+        --work-description-color: #ccc;
+        --footer-color: #777;
+        --border-color: #404040;
+        --profile-border-color: #404040;
+      }
+
       * {
         margin: 0;
         padding: 0;
@@ -101,8 +149,8 @@
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, sans-serif;
         line-height: 1.6;
-        color: #333;
-        background-color: #fff;
+        color: var(--text-color);
+        background-color: var(--background-color);
         font-size: 16px;
       }
 
@@ -114,9 +162,9 @@
 
       /* Left Sidebar */
       .sidebar {
-        background: #fafafa;
+        background: var(--sidebar-bg);
         padding: 80px 40px;
-        border-right: 1px solid #e0e0e0;
+        border-right: 1px solid var(--sidebar-border);
         position: sticky;
         top: 0;
         height: 100vh;
@@ -127,12 +175,12 @@
         font-size: 2rem;
         font-weight: 700;
         margin-bottom: 8px;
-        color: #000;
+        color: var(--sidebar-title-color);
       }
 
       .sidebar .subtitle {
         font-size: 1.1rem;
-        color: #666;
+        color: var(--sidebar-link-color);
         margin-bottom: 40px;
         line-height: 1.5;
       }
@@ -143,7 +191,7 @@
 
       .sidebar nav a {
         display: block;
-        color: #666;
+        color: var(--sidebar-link-color);
         text-decoration: none;
         margin-bottom: 12px;
         font-size: 1rem;
@@ -153,9 +201,9 @@
       }
 
       .sidebar nav a:hover {
-        color: #000;
+        color: var(--sidebar-link-hover-color);
         padding-left: 10px;
-        border-left-color: #000;
+        border-left-color: var(--sidebar-link-hover-color);
       }
 
       .sidebar-contact {
@@ -166,12 +214,12 @@
         font-size: 1rem;
         font-weight: 600;
         margin-bottom: 15px;
-        color: #000;
+        color: var(--sidebar-contact-title-color);
       }
 
       .sidebar-contact a {
         display: block;
-        color: #666;
+        color: var(--sidebar-contact-link-color);
         text-decoration: none;
         margin-bottom: 10px;
         font-size: 0.95rem;
@@ -181,8 +229,8 @@
       }
 
       .sidebar-contact a:hover {
-        color: #000;
-        border-bottom-color: #000;
+        color: var(--sidebar-contact-link-hover-color);
+        border-bottom-color: var(--sidebar-contact-link-hover-color);
       }
 
       .profile-picture {
@@ -192,7 +240,7 @@
         object-fit: cover;
         margin: 0 auto 30px;
         display: block;
-        border: 3px solid #e0e0e0;
+        border: 3px solid var(--profile-border-color);
       }
 
       .sidebar h1 {
@@ -220,14 +268,14 @@
         font-size: 2rem;
         font-weight: 700;
         margin-bottom: 40px;
-        color: #000;
+        color: var(--section-title-color);
       }
 
       /* About */
       .about-text {
         font-size: 1.1rem;
         line-height: 1.8;
-        color: #333;
+        color: var(--about-text-color);
         max-width: 800px;
       }
 
@@ -254,7 +302,7 @@
         font-size: 1.1rem;
         font-weight: 600;
         margin-bottom: 15px;
-        color: #000;
+        color: var(--skill-category-title-color);
       }
 
       .skill-category ul {
@@ -264,7 +312,7 @@
 
       .skill-category li {
         font-size: 1rem;
-        color: #666;
+        color: var(--skill-item-color);
         margin-bottom: 8px;
       }
 
@@ -277,7 +325,7 @@
       .project-list li {
         margin-bottom: 30px;
         padding-bottom: 30px;
-        border-bottom: 1px solid #f0f0f0;
+        border-bottom: 1px solid var(--border-color);
       }
 
       .project-list li:last-child {
@@ -287,13 +335,13 @@
       .project-title {
         font-size: 1.2rem;
         font-weight: 600;
-        color: #000;
+        color: var(--work-title-color);
         margin-bottom: 8px;
       }
 
       .project-description {
         font-size: 1rem;
-        color: #666;
+        color: var(--work-description-color);
         line-height: 1.6;
       }
 
@@ -313,33 +361,33 @@
       .work-title {
         font-size: 1.3rem;
         font-weight: 600;
-        color: #000;
+        color: var(--work-title-color);
         margin-bottom: 5px;
       }
 
       .work-role {
         font-size: 1rem;
-        color: #666;
+        color: var(--work-role-color);
         margin-bottom: 5px;
       }
 
       .work-date {
         font-size: 0.95rem;
-        color: #999;
+        color: var(--work-date-color);
       }
 
       .work-description {
         font-size: 1rem;
-        color: #666;
+        color: var(--work-description-color);
         line-height: 1.7;
       }
 
       /* Footer */
       footer {
         padding: 40px 80px 40px 60px;
-        border-top: 1px solid #e0e0e0;
+        border-top: 1px solid var(--border-color);
         font-size: 0.9rem;
-        color: #999;
+        color: var(--footer-color);
       }
 
       /* Responsive */
@@ -398,6 +446,31 @@
   </head>
   <body>
     <div class="layout">
+      <!-- Dark Mode Toggle -->
+      <button
+        id="darkModeToggle"
+        aria-label="Toggle dark mode"
+        style="
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: var(--sidebar-bg);
+          border: 2px solid var(--border-color);
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          z-index: 1000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+          transition: all 0.3s ease;
+        "
+      >
+        <span id="darkModeIcon" style="font-size: 24px">🌙</span>
+      </button>
+
       <!-- Left Sidebar -->
       <aside class="sidebar">
         <img src="pp.jpg" alt="Yusuf Seyrek" class="profile-picture" />
@@ -668,5 +741,38 @@
         </footer>
       </div>
     </div>
+
+    <script>
+      // Check for saved theme preference or respect system preference
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDarkScheme = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      );
+
+      // Set theme on page load
+      if (savedTheme === "dark" || (!savedTheme && prefersDarkScheme.matches)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+        document.getElementById("darkModeIcon").textContent = "☀️";
+      }
+
+      // Toggle theme function
+      function toggleTheme() {
+        const currentTheme =
+          document.documentElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+        document.documentElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+
+        // Update icon
+        document.getElementById("darkModeIcon").textContent =
+          newTheme === "dark" ? "☀️" : "🌙";
+      }
+
+      // Add event listener to toggle button
+      document
+        .getElementById("darkModeToggle")
+        .addEventListener("click", toggleTheme);
+    </script>
   </body>
 </html>

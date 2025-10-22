@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>
+      Yusuf Seyrek - Full-Stack Web3 & Blockchain Developer | React, TypeScript,
+      DeFi
+    </title>
+    <meta
+      name="title"
+      content="Yusuf Seyrek - Full-Stack Web3 & Blockchain Developer | React, TypeScript, DeFi"
+    />
+    <meta
+      name="description"
+      content="Full-Stack Web3 Developer specializing in React, TypeScript, Smart Contracts & DeFi. 15+ years experience building blockchain dApps, cross-chain bridges & tokenization platforms. Available for hire."
+    />
+    <meta
+      name="keywords"
+      content="Web3 Developer, Blockchain Developer, Frontend Developer, React Developer, TypeScript Developer, Smart Contracts, Solidity Developer, DeFi Developer, dApp Developer, Ethereum Developer, Full-Stack Developer, Blockchain Engineer, Web3 Engineer, Aeternity, Cosmos, Cross-chain Developer, NFT Developer, Crypto Developer, Decentralized Applications, Istanbul Developer, Turkey Blockchain Developer, Freelance Blockchain Developer, Contract Blockchain Developer"
+    />
+    <meta name="author" content="Yusuf Seyrek" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://seyrek.dev" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://seyrek.dev/" />
+    <meta
+      property="og:title"
+      content="Yusuf Seyrek - Full-Stack Web3 & Blockchain Developer"
+    />
+    <meta
+      property="og:description"
+      content="Full-Stack Web3 Developer specializing in React, TypeScript, Smart Contracts & DeFi. 15+ years experience building blockchain dApps, cross-chain bridges & tokenization platforms."
+    />
+    <meta property="og:image" content="https://seyrek.dev/pp.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://seyrek.dev/" />
+    <meta
+      property="twitter:title"
+      content="Yusuf Seyrek - Full-Stack Web3 & Blockchain Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Full-Stack Web3 Developer specializing in React, TypeScript, Smart Contracts & DeFi. 15+ years experience building blockchain dApps."
+    />
+    <meta property="twitter:image" content="https://seyrek.dev/pp.jpg" />
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yusuf Seyrek",
+        "url": "https://seyrek.dev",
+        "image": "https://seyrek.dev/pp.jpg",
+        "jobTitle": "Full-Stack Web3 & Blockchain Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Self-Employed"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Istanbul",
+          "addressCountry": "TR"
+        },
+        "sameAs": [
+          "https://github.com/yusufseyrek",
+          "https://www.linkedin.com/in/yusufseyrek/"
+        ],
+        "knowsAbout": [
+          "Web3",
+          "Blockchain Development",
+          "React",
+          "TypeScript",
+          "JavaScript",
+          "Smart Contracts",
+          "Solidity",
+          "DeFi",
+          "Decentralized Applications",
+          "Ethereum",
+          "Full-Stack Development",
+          "Frontend Development"
+        ],
+        "description": "Full-Stack Web3 Developer with 15+ years of experience specializing in React, TypeScript, and blockchain technologies. Expert in building decentralized applications, smart contracts, and DeFi platforms."
+      }
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        font-size: 16px;
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        min-height: 100vh;
+      }
+
+      /* Left Sidebar */
+      .sidebar {
+        background: #fafafa;
+        padding: 80px 40px;
+        border-right: 1px solid #e0e0e0;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+      }
+
+      .sidebar h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #000;
+      }
+
+      .sidebar .subtitle {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 40px;
+        line-height: 1.5;
+      }
+
+      .sidebar nav {
+        margin-bottom: 50px;
+      }
+
+      .sidebar nav a {
+        display: block;
+        color: #666;
+        text-decoration: none;
+        margin-bottom: 12px;
+        font-size: 1rem;
+        transition: all 0.2s;
+        padding-left: 0;
+        border-left: 2px solid transparent;
+      }
+
+      .sidebar nav a:hover {
+        color: #000;
+        padding-left: 10px;
+        border-left-color: #000;
+      }
+
+      .sidebar-contact {
+        margin-top: 50px;
+      }
+
+      .sidebar-contact h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #000;
+      }
+
+      .sidebar-contact a {
+        display: block;
+        color: #666;
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        word-break: break-all;
+        transition: all 0.2s;
+        border-bottom: 1px solid transparent;
+      }
+
+      .sidebar-contact a:hover {
+        color: #000;
+        border-bottom-color: #000;
+      }
+
+      .profile-picture {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 30px;
+        display: block;
+        border: 3px solid #e0e0e0;
+      }
+
+      .sidebar h1 {
+        text-align: center;
+      }
+
+      .sidebar .subtitle {
+        text-align: center;
+      }
+
+      /* Main Content */
+      .main-content {
+        padding: 80px 80px 80px 60px;
+      }
+
+      section {
+        margin-bottom: 100px;
+      }
+
+      section:last-child {
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        color: #000;
+      }
+
+      /* About */
+      .about-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+        max-width: 800px;
+      }
+
+      /* Skills */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 60px 30px;
+      }
+
+      @media (max-width: 1400px) {
+        .skills-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 1100px) {
+        .skills-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      .skill-category h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #000;
+      }
+
+      .skill-category ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .skill-category li {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 8px;
+      }
+
+      /* Current Projects */
+      .project-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .project-list li {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .project-list li:last-child {
+        border-bottom: none;
+      }
+
+      .project-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 8px;
+      }
+
+      .project-description {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      /* Work Experience */
+      .work-item {
+        margin-bottom: 50px;
+      }
+
+      .work-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .work-header {
+        margin-bottom: 15px;
+      }
+
+      .work-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 5px;
+      }
+
+      .work-role {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 5px;
+      }
+
+      .work-date {
+        font-size: 0.95rem;
+        color: #999;
+      }
+
+      .work-description {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      /* Footer */
+      footer {
+        padding: 40px 80px 40px 60px;
+        border-top: 1px solid #e0e0e0;
+        font-size: 0.9rem;
+        color: #999;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          position: static;
+          height: auto;
+          padding: 60px 40px;
+        }
+
+        .main-content {
+          padding: 60px 40px;
+        }
+
+        footer {
+          padding: 40px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .sidebar {
+          padding: 40px 20px;
+        }
+
+        .sidebar h1 {
+          font-size: 1.8rem;
+        }
+
+        .main-content {
+          padding: 40px 20px;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+          margin-bottom: 30px;
+        }
+
+        section {
+          margin-bottom: 60px;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        footer {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <!-- Left Sidebar -->
+      <aside class="sidebar">
+        <img src="pp.jpg" alt="Yusuf Seyrek" class="profile-picture" />
+        <h1>Yusuf Seyrek</h1>
+        <div class="subtitle">
+          Full-Stack Software Developer based in İstanbul, Türkiye
+        </div>
+
+        <nav>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#work">Work</a>
+          <a href="#education">Education</a>
+        </nav>
+
+        <div class="sidebar-contact">
+          <h3>Contact</h3>
+          <a href="mailto:seyrek91@gmail.com">seyrek91@gmail.com</a>
+          <a href="https://github.com/yusufseyrek" target="_blank"
+            >github.com/yusufseyrek</a
+          >
+          <a href="https://www.linkedin.com/in/yusufseyrek/" target="_blank"
+            >linkedin.com/in/yusufseyrek</a
+          >
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div>
+        <main class="main-content">
+          <!-- About -->
+          <section id="about">
+            <h2>About</h2>
+            <p class="about-text">
+              I'm a Full-Stack Software Developer with 15+ years of experience,
+              though my main focus has always been frontend development.
+              Currently, my future focus is exclusively on blockchain and Web3
+              technologies. I specialize in React, TypeScript, and Web3 stack,
+              building decentralized applications (dApps), integrating smart
+              contracts, and creating intuitive user interfaces for DeFi
+              platforms. My work spans cross-chain bridges, lending protocols,
+              and tokenization platforms across Ethereum, Aeternity, and Cosmos
+              ecosystems.
+            </p>
+          </section>
+
+          <!-- Skills -->
+          <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h3>Frontend</h3>
+                <ul>
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>JavaScript</li>
+                  <li>Next.js</li>
+                  <li>React Native</li>
+                  <li>Redux</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </div>
+
+              <div class="skill-category">
+                <h3>Web3 & Blockchain</h3>
+                <ul>
+                  <li>Smart Contracts</li>
+                  <li>Solidity</li>
+                  <li>DApps</li>
+                  <li>DeFi</li>
+                  <li>Ethers.js</li>
+                  <li>Wagmi</li>
+                  <li>Hardhat</li>
+                </ul>
+              </div>
+
+              <div class="skill-category">
+                <h3>Blockchain Ecosystems</h3>
+                <ul>
+                  <li>Ethereum</li>
+                  <li>Aeternity</li>
+                  <li>Cosmos</li>
+                  <li>Cross-chain Development</li>
+                </ul>
+              </div>
+
+              <div class="skill-category">
+                <h3>Backend & Infrastructure</h3>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Python</li>
+                  <li>Docker</li>
+                  <li>AWS</li>
+                  <li>CI/CD</li>
+                  <li>GitHub Actions</li>
+                </ul>
+              </div>
+
+              <div class="skill-category">
+                <h3>Tools & Testing</h3>
+                <ul>
+                  <li>Jest</li>
+                  <li>Git</li>
+                  <li>OpenZeppelin</li>
+                  <li>Chainlink</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Work -->
+          <section id="work">
+            <h2>Work</h2>
+
+            <div class="work-item">
+              <div class="work-header">
+                <div class="work-title">Self-Employed</div>
+                <div class="work-role">Blockchain Engineer & Developer</div>
+                <div class="work-date">Sep 2020 - Present</div>
+              </div>
+              <div class="work-description">
+                Building innovative blockchain tools while actively seeking new
+                projects and contract opportunities. Currently developing
+                arbitrage trading automation systems and blockchain analyzer
+                tools for on-chain data insights. Contributing to open-source
+                Web3 ecosystems and helping clients bring their blockchain
+                visions to life with secure, scalable dApp implementations.
+              </div>
+            </div>
+
+            <div class="work-item">
+              <div class="work-header">
+                <div class="work-title">Aeternity Foundation</div>
+                <div class="work-role">Blockchain Software Developer</div>
+                <div class="work-date">Apr 2024 - May 2025</div>
+              </div>
+              <div class="work-description">
+                Led frontend development for cross-chain bridge between
+                Aeternity and Ethereum using React, TypeScript, and Web3
+                libraries. Built automated documentation system syncing GitHub
+                repositories to GitBook. Architected Hyperchains bridge for
+                native and fungible token transfers with focus on security and
+                user experience.
+              </div>
+            </div>
+
+            <div class="work-item">
+              <div class="work-header">
+                <div class="work-title">Delphi Digital</div>
+                <div class="work-role">Web3 Frontend Engineer</div>
+                <div class="work-date">Apr 2023 - Sep 2023</div>
+              </div>
+              <div class="work-description">
+                Developed decentralized lending and borrowing platform in Cosmos
+                ecosystem. Built scalable progressive web3 application using
+                Next.js, React, TypeScript. Created features for v2 DeFi
+                platform and contributed to open-source data analysis tools.
+              </div>
+            </div>
+
+            <div class="work-item">
+              <div class="work-header">
+                <div class="work-title">Swarm</div>
+                <div class="work-role">
+                  Technical Lead & Full Stack Engineer
+                </div>
+                <div class="work-date">Jun 2021 - Sep 2022</div>
+              </div>
+              <div class="work-description">
+                Led engineering teams in building DeFi platform with smart
+                contracts for tokenizing real-world assets (RWAs). Developed
+                frontend features using React and TypeScript, integrated Web3
+                wallets, and optimized application performance. Managed
+                architectural decisions ensuring security and scalability.
+              </div>
+            </div>
+
+            <div class="work-item">
+              <div class="work-header">
+                <div class="work-title">Uberall</div>
+                <div class="work-role">Team Lead Frontend Engineering</div>
+                <div class="work-date">Dec 2017 - Aug 2020</div>
+              </div>
+              <div class="work-description">
+                Led frontend team for location-based marketing SaaS platform.
+                Advanced from Senior Frontend Engineer to Team Lead, overseeing
+                technical design, code quality, and developer mentorship.
+                Modernized frontend architecture using React and TypeScript,
+                replacing legacy systems.
+              </div>
+            </div>
+
+            <div class="work-item">
+              <div class="work-header">
+                <div class="work-title">Monument Labs</div>
+                <div class="work-role">Mobile Development Engineer</div>
+                <div class="work-date">Jun 2016 - Dec 2017</div>
+              </div>
+              <div class="work-description">
+                JavaScript-focused Client Application Engineer specializing in
+                cross-platform development. Designed and developed applications
+                from scratch for iOS, Android, and Desktop (Windows & MacOSX)
+                platforms. Contributed to device API design and implementation.
+              </div>
+            </div>
+
+            <div class="work-item">
+              <div class="work-header">
+                <div class="work-title">Nomad Commerce</div>
+                <div class="work-role">Lead Frontend Developer</div>
+                <div class="work-date">May 2014 - Jun 2016</div>
+              </div>
+              <div class="work-description">
+                First frontend developer at startup, spearheading cross-platform
+                mobile app development using React Native, Ionic, and Cordova.
+                Led frontend team, delivering applications for banking, gaming,
+                and marketing industries. Scaled team while maintaining high
+                code quality standards.
+              </div>
+            </div>
+          </section>
+
+          <!-- Education -->
+          <section id="education">
+            <h2>Education</h2>
+            <div class="work-item">
+              <div class="work-header">
+                <div class="work-title">Bahçeşehir University</div>
+                <div class="work-role">
+                  Bachelor's degree - Computer Education and Instructional
+                  Technologies
+                </div>
+                <div class="work-date">2010 - 2015 • İstanbul, Türkiye</div>
+              </div>
+              <div class="work-description">
+                Software Engineering (DSA/OOP), Project Management, and English
+                Academic Writing. Interdisciplinary curriculum including
+                psychology and sociology.
+              </div>
+            </div>
+
+            <div class="work-item">
+              <div class="work-header">
+                <div class="work-title">
+                  Profilo Anatolian Technical High School
+                </div>
+                <div class="work-role">
+                  High School Diploma - Information Technologies - Database
+                  Programming
+                </div>
+                <div class="work-date">2005 - 2010</div>
+              </div>
+              <div class="work-description">
+                Comprehensive studies in computer hardware, networking, and
+                programming. Beginning with foundational coding in C, advancing
+                to C# .NET for console application development, and expanding
+                into web development using ASP.NET. Created first professional
+                web project—a portal integrating web services to enable users to
+                play Flash games online.
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+          <div>&copy; 2025 Yusuf Seyrek</div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -174,6 +174,23 @@ body {
   border-bottom-color: var(--sidebar-contact-link-hover-color);
 }
 
+/* Resume download button styling */
+.footer-resume-button {
+  background-color: var(--sidebar-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sidebar-contact-link-color);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
 .contact-icon {
   margin-right: 10px;
   font-size: 1.1rem;

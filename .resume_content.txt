@@ -1,0 +1,148 @@
+Yusuf Seyrek
+seyrek91@gmail.com • +905354831480 • https://github.com/yusufseyrek • linkedin.com/in/yusufseyrek
+
+SUMMARY
+Blockchain & Full-Stack Developer | 15+ Years Engineering Excellence
+
+Passionate architect of decentralized systems with deep expertise in blockchain protocols, smart contracts, and full-stack dApp
+development. I combine 15 years of software engineering experience—including designing, developing, and testing software
+end-to-end—with specialized knowledge in Web3 technologies to build secure, scalable solutions bridging traditional and
+decentralized finance. A hands-on leader, I’ve established CI/CD pipelines, led development teams, and taken full ownership of
+codebases, ensuring robust, maintainable systems that align with long-term vision.
+
+Languages:
+-> Proficient: C#, Java, SQL, TypeScript, JavaScript, Python, Objective C, Solidity, Sophia.
+-> Limited Experience: C, C++, Go, Rust.
+
+Software Development Methodologies:
+-> Agile, Scrum, Rapid Application Development, DevOps, Prototype.
+
+Libraries/Frameworks:
+-> React, React Native, Ethers, Next.js, Redux, Wagmi, Tailwind, Hardhat, Chainlink, OpenZeppelin.
+
+Platforms:
+-> Web, Linux, iOS, Android, Windows, Docker, Tizen.
+
+Environments:
+-> Node.js, Deno, Bun, Github Actions.
+
+Version Control Systems:
+-> Git, SVN.
+
+EXPERIENCE
+Seyrek Yazılım, Senior Software Engineer
+Sep 2020 - Present
+I’m a self-employed blockchain engineer and full-stack developer, focused on building innovative decentralized solutions. I
+work independently, developing my own projects while contributing to open-source ecosystems to push the boundaries of
+Web3 technology. Additionally, I take on contract roles where I design, build, and deliver high-quality blockchain applications
+—from smart contracts to user interfaces—helping clients bring their visions to life with secure, scalable, and user-friendly
+implementations.
+
+Aeternity Foundation, Blockchain Software Developer
+Apr 2024 - May 2025
+As a Full-Stack Software Developer at Aeternity Foundation, I led the frontend development for a secure cross-chain bridge
+between Aeternity Mainnet and Ethereum, enabling seamless token transfers and interoperability. Beyond core development,
+I actively contributed to the ecosystem’s open-source initiatives, including designing an automated documentation system
+that aggregates and syncs GitHub repository content into a unified GitBook, significantly improving developer experience and
+enabling AI-powered documentation queries. Additionally, I architected and implemented a dedicated bridge solution for Aeternity
+Hyperchains, facilitating native and fungible token transfers between the mainnet and hyperchains while ensuring security and
+efficiency.
+
+Delphi Digital, Web3 Frontend Engineer
+Apr 2023 - Sep 2023
+I contributed to the development of a decentralized lending and borrowing platform within the Cosmos ecosystem. Initially,
+my focus was on establishing a scalable foundation for the progressive web3 application, collaborating closely with two other
+developers to ensure seamless integration and performance. Later, I expanded functionality by building additional features on top
+of the v1 DeFi platform. My work leveraged a tech stack including Next.js, React, TypeScript, CosmWasm, and the Cosmos SDK.
+Additionally, I supported the company’s open-source initiatives by helping develop tools for data analysis, improving transparency
+around protocol liquidity and reporting.
+
+
+                                                    Yusuf Seyrek - page 1 of 3
+Swarm, Technical Lead
+Nov 2021 - Sep 2022
+Led engineering teams in designing and implementing scalable DeFi solutions, including smart contracts for tokenizing real-world
+assets (RWAs). Drove architectural decisions, ensuring security, performance, and alignment with business objectives. Managed
+cross-functional collaboration, translating business requirements into technical specifications. Oversaw hiring, mentorship, and
+rigorous code reviews to maintain high standards. Spearheaded initiatives to enhance platform reliability and expand feature sets
+in decentralized finance.
+
+Swarm, Full Stack Engineer
+Jun 2021 - Sep 2022
+Designed and developed new features to extend the functionality of the DeFi platform, enhancing user experience and system
+capabilities. Collaborated closely with cross-functional teams to improve code quality, optimize application performance, and
+implement scalable solutions. Contributed to the platform's growth by delivering robust, maintainable code while adhering to best
+practices in blockchain and decentralized finance technologies.
+
+Pixsy, Senior Frontend Developer
+Sep 2020 - Nov 2020
+Contributed to the new Pixsy's new Match Viewer project by creating the foundation in the front-end. Covered the topics of;
+legacy code restraining, global state management, route logic handling, data flow, and component tree creation.
+
+Uberall, Team Lead Frontend Engineering & Squad Captain
+Dec 2018 - Aug 2020
+After a year at Uberall, I advanced to Frontend Team Lead, overseeing technical design decisions, code quality, and developer
+mentorship. Later, as the Platform Squad Lead (under the company’s Squad model), I spearheaded cross-functional deliveries,
+people management, and strategic initiatives like OKR alignment. My role focused on driving performance, enforcing best
+practices, onboarding new developers, and ensuring high-quality, scalable solutions for the location-based marketing platform.
+
+Uberall, Senior Frontend Engineer
+Dec 2017 - Aug 2020
+During my tenure at Uberall, a Berlin-based SaaS company specializing in location-based marketing solutions, I played a key role
+in enhancing product features and addressing critical technical challenges. I contributed to improving search engine indexing,
+elevating code quality, and modernizing the frontend architecture by replacing legacy systems. Working in an on-site, in-house
+capacity, I collaborated closely with cross-functional teams to drive innovation and optimize performance, ensuring scalable and
+maintainable solutions for the platform.
+
+Monument, Mobile Development Engineer
+Jun 2016 - Dec 2017
+Worked as a JavaScript focused Client Application Engineer. Also worked on device API design. Designed from scratch and
+developed projects on 3 different platform; iOS, Android and Desktop(Windows&MacOSX)
+
+Nomad Commerce, Lead Frontend Developer
+May 2014 - Jun 2016
+As the first frontend developer and 7th employee at Nomad Commerce, I spearheaded cross-platform mobile app development
+for industries like banking, social media, gaming, and marketing using Ionic, Cordova, and React Native. My work extended to
+smartwatch apps, kiosk screens, and credit card machines, contributing to the company’s rapid growth. As the team expanded, I
+took on leadership of the frontend team, guiding developers while collaborating with design and marketing to deliver high-quality,
+customer-centric solutions. My technical expertise and leadership were instrumental in scaling the team and driving innovative
+product development.
+
+Marmaraweb, Frontend & Mobile Application Developer
+May 2011 - May 2014
+During my university studies, I worked part-time at Marmaraweb, a small web agency specializing in SMB websites and
+portals. Eager to expand my skills, I proactively introduced mobile development to the company, leading its transition into iOS
+and Android app projects. My ambition and dedication allowed me to gain hands-on experience in frontend development for
+numerous websites while also taking ownership of mobile app projects. Additionally, I honed my client management abilities,
+collaborating closely with stakeholders to deliver tailored solutions. This role not only strengthened my technical expertise but also
+demonstrated my initiative in driving innovation within the team.
+
+Yeni Medya Elektronik Yayıncılık, Web Developer - Intern
+Jun 2009 - Jun 2010
+During my internship at Yeni Medya, I developed Flash game web portals using ASP.NET. I automated the process of crawling
+and downloading games from major online sources, then integrated them into the company’s portal to expand its game library.
+
+                                                     Yusuf Seyrek - page 2 of 3
+EDUCATION
+Bahcesehir University
+Bachelor's degree • Computer Education and Instructional Technologies • 2010 - 2015
+While working as a part-time software developer, I completed my Education degree with IT specialization, becoming proficient in
+software engineering (DSA/OOP), project management, and English academic writing. My interdisciplinary curriculum included
+psychology and sociology, complementing technical skills with human-centered perspectives, all while maintaining foundational
+natural science knowledge.
+Profilo Anatolian Technical High School
+High School Diploma • Information Technologies - Database Programming • 2005 - 2010
+I pursued comprehensive studies in computer hardware, networking, and programming, beginning with foundational coding in C
+before advancing to C# .NET for console application development. Subsequently, I expanded my expertise into web development
+using ASP.NET, culminating in the creation of my first professional web project—a portal that integrated web services to enable
+users to play Flash games online.
+
+SKILLS
+React • TypeScript • JavaScript • Smart Contracts • Decentralized Applications (DApps) • React Native • Github
+Actions • Sophia • Solidity • Node.js
+
+
+
+
+                                                   Yusuf Seyrek - page 3 of 3
+

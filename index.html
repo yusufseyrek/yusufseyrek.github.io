@@ -15,7 +15,7 @@
     />
     <meta
       name="description"
-      content="Full-Stack Web3 Developer specializing in React, TypeScript, Smart Contracts & DeFi. 15+ years experience building blockchain dApps, cross-chain bridges & tokenization platforms. Available for hire."
+      content="Full-Stack Web3 Developer specializing in React, TypeScript, Smart Contracts & DeFi. 15+ years building blockchain dApps and DeFi platforms."
     />
     <meta
       name="keywords"
@@ -53,34 +53,69 @@
     <meta property="twitter:image" content="https://seyrek.dev/pp.webp" />
 
     <!-- Structured Data / JSON-LD -->
-    <link rel="alternate" type="application/ld+json" href="schema.json" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yusuf Seyrek",
+        "url": "https://seyrek.dev",
+        "image": "https://seyrek.dev/pp.webp",
+        "jobTitle": "Full-Stack Web3 & Blockchain Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Self-Employed"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Istanbul",
+          "addressCountry": "TR"
+        },
+        "sameAs": [
+          "https://github.com/yusufseyrek",
+          "https://www.linkedin.com/in/yusufseyrek/"
+        ],
+        "knowsAbout": [
+          "Web3",
+          "Blockchain Development",
+          "React",
+          "TypeScript",
+          "JavaScript",
+          "Smart Contracts",
+          "Solidity",
+          "DeFi",
+          "Decentralized Applications",
+          "Ethereum",
+          "Full-Stack Development",
+          "Frontend Development"
+        ],
+        "description": "Full-Stack Web3 Developer with 15+ years of experience specializing in React, TypeScript, and blockchain technologies. Expert in building decentralized applications, smart contracts, and DeFi platforms."
+      }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <div class="layout">
       <!-- Dark Mode Toggle -->
       <button
         id="darkModeToggle"
+        class="dark-mode-toggle"
         aria-label="Toggle dark mode"
-        style="
-          position: fixed;
-          top: 20px;
-          right: 20px;
-          background: var(--sidebar-bg);
-          border: 2px solid var(--border-color);
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
-          cursor: pointer;
-          z-index: 1000;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-          transition: all 0.3s ease;
-        "
       >
-        <span id="darkModeIcon" style="font-size: 24px">🌙</span>
+        <svg id="darkModeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Moon icon (default for dark theme - clicking switches to light) -->
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
       </button>
 
       <!-- Left Sidebar -->
@@ -90,40 +125,46 @@
           src="pp.webp"
           alt="Yusuf Seyrek"
           class="profile-picture"
+          width="140"
+          height="140"
         />
         <h1>Yusuf Seyrek</h1>
         <div class="subtitle">
           Full-Stack Software Developer based in İstanbul, Türkiye
         </div>
 
-        <nav>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#work">Work</a>
-          <a href="#education">Education</a>
+        <nav aria-label="Main navigation">
+          <a href="#about" data-section="about">About</a>
+          <a href="#skills" data-section="skills">Skills</a>
+<a href="#work" data-section="work">Work</a>
+          <a href="#education" data-section="education">Education</a>
         </nav>
 
-        <div class="sidebar-contact">
-          <a href="mailto:seyrek91@gmail.com"
-            ><span class="contact-icon">✉️</span> seyrek91@gmail.com</a
-          >
-          <a href="https://github.com/yusufseyrek" target="_blank"
-            ><span class="contact-icon">💻</span> github.com/yusufseyrek</a
-          >
-          <a href="https://www.linkedin.com/in/yusufseyrek/" target="_blank"
-            ><span class="contact-icon">💼</span> linkedin.com/in/yusufseyrek</a
-          >
-          <a href="Yusuf_Seyrek_Resume.pdf" download
-            ><span class="contact-icon">⬇️</span> Download Resume</a
-          >
+        <div class="sidebar-contact" aria-label="Contact links">
+          <a href="mailto:seyrek91@gmail.com">
+            <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            seyrek91@gmail.com
+          </a>
+          <a href="https://github.com/yusufseyrek" target="_blank">
+            <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            github.com/yusufseyrek
+          </a>
+          <a href="https://www.linkedin.com/in/yusufseyrek/" target="_blank">
+            <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            linkedin.com/in/yusufseyrek
+          </a>
+          <a href="Yusuf_Seyrek_Resume.pdf" download>
+            <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
         </div>
       </aside>
 
       <!-- Main Content -->
       <div>
-        <main class="main-content">
+        <main id="main-content" class="main-content">
           <!-- About -->
-          <section id="about">
+          <section id="about" class="fade-in">
             <h2>About</h2>
             <p class="about-text">
               I'm a Full-Stack Software Developer with 15+ years of experience,
@@ -138,7 +179,7 @@
           </section>
 
           <!-- Skills -->
-          <section id="skills">
+          <section id="skills" class="fade-in">
             <h2>Skills</h2>
             <div class="skills-grid">
               <div class="skill-category">
@@ -202,235 +243,154 @@
           </section>
 
           <!-- Work -->
-          <section id="work">
+          <section id="work" class="fade-in">
             <h2>Work</h2>
 
-            <div class="work-item">
+            <div class="work-item fade-in">
               <div class="work-header">
                 <div class="work-title">Self-Employed</div>
                 <div class="work-role">Blockchain Engineer & Developer</div>
-                <div class="work-date">Sep 2020 - Present</div>
+                <div class="work-date">Sep 2020 — Present</div>
               </div>
-              <div class="work-description">
-                Building innovative blockchain tools while actively seeking new
-                projects and contract opportunities. Currently developing
-                arbitrage trading automation systems and blockchain analyzer
-                tools for on-chain data insights. Contributing to open-source
-                Web3 ecosystems and helping clients bring their blockchain
-                visions to life with secure, scalable dApp implementations.
-                Specializing in smart contract development, full-stack Web3
-                applications, and decentralized finance (DeFi) solutions.
-                Technologies include Solidity, TypeScript, React, Ethers.js,
-                Wagmi, and various blockchain ecosystems.
-              </div>
+              <ul class="work-description">
+                <li>Building arbitrage trading automation systems and blockchain analyzer tools for on-chain data insights</li>
+                <li>Developing secure, scalable dApp implementations for clients across multiple blockchain ecosystems</li>
+                <li>Contributing to open-source Web3 projects and smart contract development</li>
+                <li>Specializing in Solidity, TypeScript, React, Ethers.js, Wagmi, and DeFi protocol integration</li>
+              </ul>
             </div>
 
-            <div class="work-item">
+            <div class="work-item fade-in">
               <div class="work-header">
                 <div class="work-title">Aeternity Foundation</div>
                 <div class="work-role">Blockchain Software Developer</div>
-                <div class="work-date">Apr 2024 - May 2025</div>
+                <div class="work-date">Apr 2024 — May 2025</div>
               </div>
-              <div class="work-description">
-                As a Blockchain Software Developer at Aeternity Foundation, I
-                led frontend development for a secure cross-chain bridge between
-                Aeternity Mainnet and Ethereum, enabling seamless token
-                transfers and interoperability. I also contributed to the
-                ecosystem's open-source initiatives, including designing an
-                automated documentation system that aggregates and syncs GitHub
-                repository content into a unified GitBook, significantly
-                improving developer experience and enabling AI-powered
-                documentation queries. Additionally, I architected and
-                implemented a dedicated bridge solution for Aeternity
-                Hyperchains, facilitating native and fungible token transfers
-                between the mainnet and hyperchains while ensuring security and
-                efficiency. My technical expertise included developing smart
-                contracts in Sophia for cross-chain token transfers and bridge
-                functionality, implementing secure wallet integration with
-                MetaMask and WalletConnect, and collaborating with the core team
-                to optimize transaction gas fees and improve scalability of
-                cross-chain operations.
-              </div>
+              <ul class="work-description">
+                <li>Led frontend development for a cross-chain bridge between Aeternity Mainnet and Ethereum, enabling seamless token transfers</li>
+                <li>Architected a dedicated bridge for Aeternity Hyperchains, facilitating native and fungible token transfers</li>
+                <li>Designed an automated documentation system aggregating GitHub content into a unified GitBook with AI-powered queries</li>
+                <li>Developed smart contracts in Sophia for cross-chain functionality with MetaMask and WalletConnect integration</li>
+                <li>Optimized transaction gas fees and improved scalability of cross-chain operations</li>
+              </ul>
             </div>
 
-            <div class="work-item">
+            <div class="work-item fade-in">
               <div class="work-header">
                 <div class="work-title">Delphi Digital</div>
                 <div class="work-role">Web3 Frontend Engineer</div>
-                <div class="work-date">Apr 2023 - Sep 2023</div>
+                <div class="work-date">Apr 2023 — Sep 2023</div>
               </div>
-              <div class="work-description">
-                At Delphi Digital, I contributed to developing a decentralized
-                lending and borrowing platform within the Cosmos ecosystem. I
-                focused on establishing a scalable foundation for the
-                progressive web3 application, collaborating closely with two
-                other developers to ensure seamless integration and performance.
-                I later expanded functionality by building additional features
-                on top of the v2 DeFi platform. My work leveraged a tech stack
-                including Next.js, React, TypeScript, CosmWasm, and the Cosmos
-                SDK. Additionally, I supported the company's open-source
-                initiatives by helping develop tools for data analysis,
-                improving transparency around protocol liquidity and reporting.
-                My technical expertise included implementing CosmWasm smart
-                contract interactions and integrating Pyth price feeds for
-                accurate asset valuation, as well as optimizing application
-                performance and user experience for DeFi protocols with complex
-                financial calculations.
-              </div>
+              <ul class="work-description">
+                <li>Built a decentralized lending and borrowing platform within the Cosmos ecosystem using Next.js, React, and TypeScript</li>
+                <li>Established scalable foundation for the progressive web3 application and expanded v2 DeFi features</li>
+                <li>Implemented CosmWasm smart contract interactions and integrated Pyth price feeds for asset valuation</li>
+                <li>Developed open-source tools for protocol liquidity data analysis and transparent reporting</li>
+              </ul>
             </div>
 
-            <div class="work-item">
+            <div class="work-item fade-in">
               <div class="work-header">
                 <div class="work-title">Swarm</div>
-                <div class="work-role">
-                  Technical Lead & Full Stack Engineer
-                </div>
-                <div class="work-date">Jun 2021 - Sep 2022</div>
+                <div class="work-role">Technical Lead & Full Stack Engineer</div>
+                <div class="work-date">Jun 2021 — Sep 2022</div>
               </div>
-              <div class="work-description">
-                At Swarm, I led engineering teams in designing and implementing
-                scalable DeFi solutions, including smart contracts for
-                tokenizing real-world assets (RWAs). I drove architectural
-                decisions, ensuring security, performance, and alignment with
-                business objectives. Managing cross-functional collaboration, I
-                translated business requirements into technical specifications.
-                I oversaw hiring, mentorship, and rigorous code reviews to
-                maintain high standards. Additionally, I spearheaded initiatives
-                to enhance platform reliability and expand feature sets in
-                decentralized finance. My technical contributions included
-                designing and developing new features to extend the
-                functionality of the DeFi platform, enhancing user experience
-                and system capabilities. I collaborated closely with
-                cross-functional teams to improve code quality, optimize
-                application performance, and implement scalable solutions,
-                contributing to the platform's growth by delivering robust,
-                maintainable code while adhering to best practices in blockchain
-                and decentralized finance technologies.
-              </div>
+              <ul class="work-description">
+                <li>Led engineering teams in designing scalable DeFi solutions, including smart contracts for tokenizing real-world assets (RWAs)</li>
+                <li>Drove architectural decisions ensuring security, performance, and alignment with business objectives</li>
+                <li>Managed cross-functional collaboration, translating business requirements into technical specifications</li>
+                <li>Oversaw hiring, mentorship, and rigorous code reviews to maintain high engineering standards</li>
+              </ul>
             </div>
 
-            <div class="work-item">
+            <div class="work-item fade-in">
               <div class="work-header">
                 <div class="work-title">Uberall</div>
-                <div class="work-role">
-                  Team Lead Frontend Engineering & Squad Captain
-                </div>
-                <div class="work-date">Dec 2017 - Aug 2020</div>
+                <div class="work-role">Team Lead Frontend Engineering & Squad Captain</div>
+                <div class="work-date">Dec 2017 — Aug 2020</div>
               </div>
-              <div class="work-description">
-                At Uberall, a Berlin-based SaaS company specializing in
-                location-based marketing solutions, I played a key role in
-                enhancing product features and addressing critical technical
-                challenges. I contributed to improving search engine indexing,
-                elevating code quality, and modernizing the frontend
-                architecture by replacing legacy systems. Working in an on-site,
-                in-house capacity, I collaborated closely with cross-functional
-                teams to drive innovation and optimize performance, ensuring
-                scalable and maintainable solutions for the platform. After a
-                year at Uberall, I advanced to Frontend Team Lead, overseeing
-                technical design decisions, code quality, and developer
-                mentorship. Later, as the Platform Squad Lead (under the
-                company's Squad model), I spearheaded cross-functional
-                deliveries, people management, and strategic initiatives like
-                OKR alignment. My role focused on driving performance, enforcing
-                best practices, onboarding new developers, and ensuring
-                high-quality, scalable solutions for the location-based
-                marketing platform. I also led the development of a new Match
-                Viewer project, creating the foundation in the front-end and
-                covering topics such as legacy code management, global state
-                management, route logic handling, data flow, and component tree
-                creation.
-              </div>
+              <ul class="work-description">
+                <li>Advanced from Frontend Developer to Team Lead, overseeing technical design, code quality, and developer mentorship</li>
+                <li>Led Platform Squad under the company's Squad model, driving cross-functional deliveries and OKR alignment</li>
+                <li>Modernized frontend architecture by replacing legacy systems, improving search engine indexing and performance</li>
+                <li>Led development of the Match Viewer project, establishing patterns for state management, routing, and component architecture</li>
+              </ul>
             </div>
 
-            <div class="work-item">
+            <div class="work-item fade-in">
               <div class="work-header">
                 <div class="work-title">Monument Labs</div>
                 <div class="work-role">Mobile Development Engineer</div>
-                <div class="work-date">Jun 2016 - Dec 2017</div>
+                <div class="work-date">Jun 2016 — Dec 2017</div>
               </div>
-              <div class="work-description">
-                As a Mobile Development Engineer at Monument Labs, I specialized
-                in JavaScript-focused client application development. I designed
-                and developed applications from scratch for iOS, Android, and
-                Desktop (Windows & MacOSX) platforms. My work involved
-                contributing to device API design and implementation, ensuring
-                seamless cross-platform functionality and performance across
-                different operating systems and devices.
-              </div>
+              <ul class="work-description">
+                <li>Designed and developed JavaScript-based applications from scratch for iOS, Android, and Desktop platforms</li>
+                <li>Contributed to device API design and implementation ensuring cross-platform functionality</li>
+                <li>Delivered seamless performance across different operating systems and devices</li>
+              </ul>
             </div>
 
-            <div class="work-item">
+            <div class="work-item fade-in">
               <div class="work-header">
                 <div class="work-title">Nomad Commerce</div>
                 <div class="work-role">Lead Frontend Developer</div>
-                <div class="work-date">May 2014 - Jun 2016</div>
+                <div class="work-date">May 2014 — Jun 2016</div>
               </div>
-              <div class="work-description">
-                As the first frontend developer and 7th employee at Nomad
-                Commerce, I spearheaded cross-platform mobile app development
-                for industries like banking, social media, gaming, and marketing
-                using Ionic, Cordova, and React Native. My work extended to
-                smartwatch apps, kiosk screens, and credit card machines,
-                contributing to the company's rapid growth. As the team
-                expanded, I took on leadership of the frontend team, guiding
-                developers while collaborating with design and marketing to
-                deliver high-quality, customer-centric solutions. My technical
-                expertise and leadership were instrumental in scaling the team
-                and driving innovative product development.
-              </div>
+              <ul class="work-description">
+                <li>First frontend developer and 7th employee — spearheaded cross-platform mobile development using Ionic, Cordova, and React Native</li>
+                <li>Expanded beyond mobile to smartwatch apps, kiosk screens, and credit card machine interfaces</li>
+                <li>Grew into frontend team leadership, guiding developers while collaborating with design and marketing</li>
+                <li>Instrumental in scaling the team and driving innovative product development across banking, social media, and gaming</li>
+              </ul>
             </div>
           </section>
 
           <!-- Education -->
-          <section id="education">
+          <section id="education" class="fade-in">
             <h2>Education</h2>
-            <div class="work-item">
+            <div class="work-item fade-in">
               <div class="work-header">
                 <div class="work-title">Bahçeşehir University</div>
                 <div class="work-role">
-                  Bachelor's degree - Computer Education and Instructional
+                  Bachelor's degree — Computer Education and Instructional
                   Technologies
                 </div>
-                <div class="work-date">2010 - 2015 • İstanbul, Türkiye</div>
+                <div class="work-date">2010 — 2015 · İstanbul, Türkiye</div>
               </div>
-              <div class="work-description">
-                Software Engineering (DSA/OOP), Project Management,
-                Instructional Design and English Academic Writing.
-                Interdisciplinary curriculum including psychology and sociology.
-              </div>
+              <ul class="work-description">
+                <li>Software Engineering fundamentals including DSA and OOP</li>
+                <li>Project Management and Instructional Design</li>
+                <li>Interdisciplinary curriculum including psychology, sociology, and English Academic Writing</li>
+              </ul>
             </div>
 
-            <div class="work-item">
+            <div class="work-item fade-in">
               <div class="work-header">
                 <div class="work-title">
                   Profilo Anatolian Technical High School
                 </div>
                 <div class="work-role">
-                  High School Diploma - Information Technologies - Database
+                  High School Diploma — Information Technologies — Database
                   Programming
                 </div>
-                <div class="work-date">2005 - 2010</div>
+                <div class="work-date">2005 — 2010</div>
               </div>
-              <div class="work-description">
-                Comprehensive studies in computer hardware, networking, and
-                programming. Beginning with foundational coding in C, advancing
-                to C# .NET for console application development, and expanding
-                into web development using ASP.NET. Created first professional
-                web project—a portal integrating web services to enable users to
-                play Flash games online.
-              </div>
+              <ul class="work-description">
+                <li>Computer hardware, networking, and programming fundamentals starting with C</li>
+                <li>Advanced to C# .NET console applications and ASP.NET web development</li>
+                <li>Created first professional web project — a portal integrating web services for online Flash games</li>
+              </ul>
             </div>
           </section>
         </main>
 
         <!-- Footer -->
         <footer>
-          <div>&copy; 2025 Yusuf Seyrek</div>
+          <div>&copy; 2026 Yusuf Seyrek</div>
         </footer>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
